@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Code Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="tab">
+        <button class="tablinks" onclick="sendChar(this)">(</button>
+        <button class="tablinks" onclick="sendChar(this)">)</button>
+        <button class="tablinks" onclick="sendChar(this)">{</button>
+        <button class="tablinks" onclick="sendChar(this)">}</button>
+        <button class="tablinks" onclick="sendChar(this)">[</button>
+        <button class="tablinks" onclick="sendChar(this)">]</button>        
+    </div>
+    <br>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(this, 'htmltab')">HTML</button>
+        <button class="tablinks" onclick="openTab(this, 'csstab')">CSS</button>
+        <button class="tablinks" onclick="openTab(this, 'jstab')">JS</button>
+        <button class="tablinks" onclick="openTab(this, 'resulttab')">Result</button>        
+    </div>
+    <div id="htmltab" class="tabcontent">
+        <textarea id="html" placeholder="HTML"></textarea>
+      </div>
+      
+      <div id="csstab" class="tabcontent">
+        <textarea id="css" placeholder="CSS"></textarea>
+      </div>
+      
+      <div id="jstab" class="tabcontent">
+        <textarea id="js" placeholder="JavaScript"></textarea>
+      </div>
+      <div id="resulttab" class="tabcontent">
+        <iframe id="result"></iframe>
+      </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
