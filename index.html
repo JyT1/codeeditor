@@ -7,7 +7,20 @@
 
   <body>
     <div class="tab">
-        <button class="tablinks" onclick="openTab(this, 'htmltab')">HTML</button>
+        <button class="tablinks" onclick="sendChar(this)">(</button>
+        <button class="tablinks" onclick="sendChar(this)">)</button>
+        <button class="tablinks" onclick="sendChar(this)">{</button>
+        <button class="tablinks" onclick="sendChar(this)">}</button>
+        <button class="tablinks" onclick="sendChar(this)">[</button>
+        <button class="tablinks" onclick="sendChar(this)">]</button>
+        <button class="tablinks" onclick="sendChar(this)">&lt;</button>
+        <button class="tablinks" onclick="sendChar(this)">&gt;</button>    
+        <button class="tablinks" onclick="sendChar(this)">;</button>
+        <button class="tablinks" onclick="sendChar(this)">'</button>            
+    </div>
+    <br>
+    <div class="tab">
+        <button id="defaulttab" class="tablinks" onclick="openTab(this, 'htmltab')">HTML</button>
         <button class="tablinks" onclick="openTab(this, 'csstab')">CSS</button>
         <button class="tablinks" onclick="openTab(this, 'jstab')">JS</button>
         <button class="tablinks" onclick="openTab(this, 'resulttab')">Result</button>        

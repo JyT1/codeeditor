@@ -12,8 +12,21 @@ function openTab(element, tab) {
     element.className += " active";
 }
 function sendChar(element) {
-    const character = element.innerHTML
-    
+    let character = element.innerHTML;
+    if (character == "&gt;") {
+        character = ">"
+    }
+    if (character == "&lt;") {
+        character = "<"
+    }
+    const tablinks = document.getElementsByClassName("tablinks");
+    for (let i in tablinks) {
+        if (tablinks[i].className.toString().includes(" active")) {
+            const textarea = document.getElementById(tablinks[i].innerHTML.toLowerCase())
+            textarea.value = textarea.value + character;
+            break;
+        }
+    }
 }
 function compile() {
     const html = document.getElementById("html");
@@ -26,4 +39,5 @@ function compile() {
         result.close();
     };
 }
+document.getElementById("defaulttab").click()
 compile();
