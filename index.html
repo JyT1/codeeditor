@@ -2,7 +2,8 @@
   <head>
     <title>Code Editor</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />   	
+    <link rel='icon' href='favicon.png' type='image/x-icon'/ >
   </head>
 
   <body>
@@ -37,6 +38,7 @@
         <textarea id="js" placeholder="JavaScript"></textarea>
       </div>
       <div id="resulttab" class="tabcontent">
+          <button class="sbutton" onclick="compile()">Run</button>
         <iframe id="result"></iframe>
       </div>
     <script type="text/javascript" src="index.js"></script>

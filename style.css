@@ -4,7 +4,18 @@ body {
     font-family: Arial;
     text-align: center;
 }
-
+.sbutton {
+    background-color: #ddd;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+.sbutton:hover {
+    background-color: #ccc;
+}
 .tab {
   overflow: hidden;
   border: none;
